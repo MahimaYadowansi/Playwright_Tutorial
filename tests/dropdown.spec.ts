@@ -63,6 +63,12 @@ test("Single/Multi-Select dropdown",async({page})=>{
    console.log(sortedColour);
     await expect.soft(sortedColour,"Dropdown values are not sorted alphabetically.").toEqual(colourtext);
 
+    //or
+    const sortedColour1=[...colourtext].sort();
+    console.log(sortedColour1);
+    expect(colourtext).toEqual(sortedColour1);
+    
+
    //verify duplicate
    await expect.soft(new Set(colourtext).size, "Colour dropdown has duplicate colours").toBe(colourtext.length);
 

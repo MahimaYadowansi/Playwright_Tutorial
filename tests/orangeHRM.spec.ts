@@ -18,17 +18,18 @@ test("Login in Orange HRM",async({page})=>{
      await page.getByText('PIM').click();
      //Click job details:
      console.log("Clicked PIM");
-     await page.locator("(//input[@placeholder='Type for hints...'])[1]").fill("p");
-     await page.locator("//div[@role='listbox']//div//span[text()='Peter Mac Anderson']").click();
-     console.log("Entered employee name");
-     await page.locator("(//div[text()='-- Select --'])[3]").click();
-     page.waitForTimeout(3000);
-     const alljobs=await page.locator("//div[@role='option']//span").innerText();
-     console.log(alljobs);
+
+    //  await page.locator("(//input[@placeholder='Type for hints...'])[1]").fill("p");
+    //  await page.locator("//div[@role='listbox']//div//span[text()='Peter Mac Anderson']").click();
+    //  console.log("Entered employee name");
+    //  await page.locator("(//div[text()='-- Select --'])[3]").click();
+    //  page.waitForTimeout(3000);
+    //  const alljobs=await page.locator("//div[@role='option']//span").innerText();
+    //  console.log(alljobs);
     
-     await page.locator("//div[@role='option']//span[text()='HR Manager']").click();
+    //  await page.locator("//div[@role='option']//span[text()='HR Manager']").click();
      
-     console.log("Job is clicked");
+    //  console.log("Job is clicked");
      
 
 

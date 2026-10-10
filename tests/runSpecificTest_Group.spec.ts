@@ -18,3 +18,4 @@ test("This is @systemTest" ,async({page})=>{
     console.log("This is system test");
 });
 
+//npx playwright test --grep "@smoke"
